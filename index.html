@@ -1,270 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="shortcut icon" type="x-icon" href="Images/Pluga Logo3.png">
+	<title>pluga.site</title>
+	<link rel="stylesheet" href="pluga.css" />
+	<!-- Font Awesome icon cdn -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+	integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<script src="https://kit.fontawesome.com/61003df5a9.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <style>
-        .share-button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 14px;
-            cursor: pointer;
-            display: inline-block;
-            margin-bottom: 10px;
-            margin-left: 43%;
-        }
 
-        .social-platforms {
-            display: none;
-        }
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	<style>
+		.share-button {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px;
+			border-radius: 14px;
+			cursor: pointer;
+			display: inline-block;
+			margin-bottom: 10px;
+			margin-left: 20%;
+		}
 
-        .social-platforms.show {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
-            padding-bottom: 10px;
-            margin-right: 5px;
-        }
+		.social-platforms {
+			display: none;
+		}
 
-        .social-platforms a {
-            margin: 8px;
-            color: white;
-            font-size: 30px;
-        }
-    </style>
-    <script>
-        function showSocialPlatforms() {
-            const socialPlatforms = document.querySelector('.social-platforms');
-            socialPlatforms.classList.toggle('show');
-        }
+		.social-platforms.show {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 10px;
+			padding-bottom: 10px;
+			margin-right: 5px;
+		}
 
-        function shareLink(platform) {
-            var linkToShare = "https://www.blossomvelder.co.za/index.html"; // Replace with your link to share
-            var socialUrl;
+		.social-platforms a {
+			margin: 8px;
+			color: white;
+			font-size: 30px;
+		}
+	</style>
+	<script>
+		function showSocialPlatforms() {
+			const socialPlatforms = document.querySelector('.social-platforms');
+			socialPlatforms.classList.toggle('show');
+		}
 
-            if (platform === 'facebook') {
-                socialUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(linkToShare);
-            } else if (platform === 'instagram') {
-                socialUrl = 'https://www.instagram.com/share?url=' + encodeURIComponent(linkToShare);
-            } else if (platform === 'email') {
-                socialUrl = 'mailto:?body=' + encodeURIComponent(linkToShare);
-            } else if (platform === 'whatsapp') {
-                socialUrl = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(linkToShare);
-            }
+		function shareLink(platform) {
+			var linkToShare = "https://messyp.netlify.app/index.html"; // Replace with your link to share
+			var socialUrl;
 
-            window.open(socialUrl, '_blank');
-        }
-    </script>
+			if (platform === 'facebook') {
+				socialUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(linkToShare);
+			} else if (platform === 'instagram') {
+				socialUrl = 'https://www.instagram.com/share?url=' + encodeURIComponent(linkToShare);
+			} else if (platform === 'email') {
+				socialUrl = 'mailto:?body=' + encodeURIComponent(linkToShare);
+			} else if (platform === 'whatsapp') {
+				socialUrl = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(linkToShare);
+			}
 
-<link rel="shortcut icon" type="x-icon" href="images/agency.logo.png">
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G7WB693WKF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-G7WB693WKF');
-</script>
+			window.open(socialUrl, '_blank');
+		}
+	</script>
 
 
 
-    <link rel="shortcut icon" type="x-icon" href="images/agency.logo.png">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blossom.</title>
-    <!-- font awesome cdn  -->
-    <script src="https://kit.fontawesome.com/46b7ceee20.js" crossorigin="anonymous"></script>
-
-    <!-- custom css  -->
-    <link rel="stylesheet" href="site.css">
 </head>
 <body>
 
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/64205d404247f20fefe812ac/1gsf6ohjf';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+	<!-- Insert Site Cover image -->
+	<div class="wrapper">
+		<div class="page">
+	<div class="cover" style="background-image: url(Images/Profile-Cover.jpg); height: 1300px; margin-bottom: -1000px; margin-top: 12px">	
+		</div>
+		
+		
+
+		<!-- Insert Site Logo or profile picture -->
+		<div class="id-section">
+			<div class="circle">
+				<img src="Images/Messi-profile.jpg" class="logo">
+			</div>
+
+
+<div class="details" style="background-color: white;">
+
+
+			<!-- Insert site owner name -->
+			
+			<div class="id">
+				<h2 style="border: none;">MESSI P</h2>
+
+
+				<div style="background-color: white; width: 100%; margin-top: 10px;">
+				
+			<!-- Insert site owner's social media handle links -->
+
+									<div class="social-media-icons" style="margin-left: 28%; padding: 10px;">
+      <ul style="align-content: center; text-align: center; margin-bottom: 20px; margin-top: 7px;">
+        <li class="social-items"><a href="https://web.facebook.com"><i class="fab fa-facebook" style="color: blue"></i></a></li>
+     
+        <li class="social-items"><a href="https://instagram.com"><i class="fab fa-instagram" style="color: purple;"></i></i></a></li>
+
+        <li class="social-items"><a href="http://tiktok.com"><i class="fa-brands fa-tiktok" style="color: black"></i></i></a></li>
+
+        <li class="social-items"><a href="https://soundcloud.com/user-242878577?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><i class="fa-brands fa-soundcloud"></i></i></a></li>
+
+        <li class="social-items"><a href="https://youtube.comw"><i class="fab fa-youtube" style="color: red;"></i></i></a></li>
+      </ul>
+  </div>
+</div>
+			<i class=""></i>
+
+				<!-- Insert site owner's expertise/interests -->
+
+				<h5 style="font-size: 17px;">Musician | Creative | Entrepreneur</h5>
 
 
 
+							  			
 
+</div>
+<div class="buttons" style="text-align: center;">
+				<button onclick="window.location.href='gallery.html';">
+					<i class="fa-solid fa-image"></i>Gallery
+				</button>
+			
+				<button onclick="window.location.href='projects.html';">
+					<i class="fa-solid fa-circle-down"></i>Projects
+				</button>	
 
-    <!-- home page  -->
-    <div class="home-page">
-        <!-- header section  -->
-        <div class="header-section">
-            <!-- header logo  -->
-            <div class="logo">
-                 <img src="images/agency.logo.png" alt="">
-            </div>
+				<button onclick="window.location.href='booking.html';">
+					<i class="fa-solid fa-calendar-day"></i>Bookings
+				</button>
 
-            <!-- header navigation  -->
-            <div class="header-nav">
-                <div class="mobile-nav-bar">
-                    <i class="fa-solid fa-bars" id="mobile-nav-bar-icon"></i>
-                </div>
-                <ul class="header-nav-list" id="header-nav-list">
-                    <li class="header-nav-tab ">
-                        <a href="index.html">Home</a>
-                    </li>
-                     <li class="header-nav-tab">
-                        <a href="About.html">About</a>
-                    </li>
-                    <li class="header-nav-tab">
-                        <a href="Contacts.html" >Contacts</a>
-                    </li >
-                     <li class="header-nav-tab">
-                        <a href="Gallery.html" >Gallery</a>
-                    </li >
-                   
-                    <span class="highlight"></span>
-                </ul>
-                <div class="mode-change">
-                    <i class="fa-solid fa-moon" id="mode-change"></i>
-                </div>
-            </div>
-        </div>
-        <!-- hero section  -->
-        <div class="hero-section">
-            <!-- hero content section  -->
-            <div class="hero-content">
-                <div class="content-header">
-                    <h1>Hi there!</h1>
-                    <h1>Blossom Velder, here..</h1>
-                    <p style="margin-top:8px">A Creative Design Agency, providing website development/design, graphic design, storybook illustrations, business establishment and business growth services. We also build cool & awesome advanced-tech products for businesses and for you...</p>
-                </div>
-                
-                
-                <div class="content-btn">
-                    <button onclick="window.location.href='pluga.html';"><i class="resume-btn">
-                    </i>Get Pluga-site</button>
+				<button onclick="window.location.href='selling2.html';">
+					<i class="fa-solid fa-layer-group"></i>Services
+				</button>
 
-                    <button onclick="window.location.href='plans.html';"><i class="resume-btn">
-                    </i>Website design & dev</button>
+				<button onclick="window.location.href='selling.html';">
+					<i class="fa-solid fa-shirt"></i>Merch
+				</button>
 
-                    <button onclick="window.location.href='Services.html';"><i class="resume-btn">
-                    </i>More Services</button>
+			</div>
+			<hr>
+			<div class="details">
+				<h2 style="text-align: center; margin-bottom: 15px">Hi there!</h2>
 
-                    <button onclick="window.location.href='Products.html';"><i class="resume-btn">
-                    </i>Products</button>
+</div>
+		
 
-                    <button onclick="window.location.href='bookings.html';"><i class="resume-btn">
-                    </i>Bookings</button>
+			<!-- Insert site owner's description, mission & vission -->
 
-                     <div class="share-button" onclick="showSocialPlatforms()"><i class="fas fa-share"></i>Share Plug</div>
-    <div class="social-platforms">
-        <a href="https://www.blossomvelder.co.za/index.html" onclick="shareLink('facebook')"><i class="fab fa-facebook" style="color: blue; font-size: 70px;"></i></a>
-        <a href="https://www.blossomvelder.co.za/index.html" onclick="shareLink('instagram')"><i class="fab fa-instagram" style="color: purple; font-size: 70px;"></i></a>
-        <a href="https://www.blossomvelder.co.za/index.html" onclick="shareLink('email')"><i class="fas fa-envelope" style="color: red; font-size: 70px;"></i></a>
-        <a href="https://www.blossomvelder.co.za/index.html" onclick="shareLink('whatsapp')"><i class="fab fa-whatsapp" style="color: green; font-size: 70px;"></i></a>
-    </div>
+				<p style="text-align: center; font-size: 17px">
+					<br>
+					My Name is MESSI P and i am a musician, doing music in the genres of Hiphop, Swedish house, and RNB. I love music but mostly, i love making music that speaks to people. For live performances you can book me via phonecall, whatapp or e-mail, my contact details are listed below. I also have my own clothing brand check it out together with my projects on more. 
+					<br><br>
+					</p>
 
-                </div>
-            </div>
-        </div>
+  <div class="container">
+  	<h2 style="text-align: center; margin-bottom: 17px">Get in touch</h2>
 
- <div class="boxed" style="margin-top: 10px">
- <h1 style=" color: white; background-color: transparent;">Pluga-site</h1>
- <p style="font-size: 17px; color: black; background-color: white; padding: 7px; border-radius: 15px; margin-bottom: 11px;">Tired of juggling multiple links and scattered content when promoting your work? get the Pluga-site📱 The pluga-site is specially designed for you to elegantly display and market your work, skills, products or services. Say goodbye to the hassle and embrace the power of a unified online presence, & have everything in one site for sharing & marketing with ease! From your music, videos, links, projects, brand, products, services, and more + your own domain name www.yourname.co.za. A must have for Artists, Creatives, Content Creators, and Entrepreneurs.</p>
- <p style=" color: black; background-color: white; padding: 7px; border-radius: 15px">
-
-     <video autoplay muted loop src="videos/Pluga.site Official Ad.mp4" width="100%"></video>
-    
-    🎨Showcase & market your Talents/Projects/Products/Services: Whether you're a musician, photographer, skilled craftsman, or offer unique services, the pluga-site is specially designed for you to elegantly display, share and market your work, skills, products or services with ease. Everything you do and about you or venture easily sharable in one site, from your music, videos, links, projects, brand, products, services, and more + your own domain name www.yourname.co.za
- </p>
-
-
- <div class="content-btn">
-<button  style="font-size:16px; color: white; border: 2px solid orange;" onclick="window.location.href='pluga.html';"><i class="resume-btn">
-                    </i>Get Pluga-site</button>
-                </div>
-
-        <div class="boxed" style="margin-top: 10px">
- <h1 style=" color: white; background-color: transparent;">Website design & development</h1>
- <p style=" color: black; background-color: white; padding: 7px; border-radius: 15px">
-
-     <video autoplay muted loop src="videos/Website-Ad.mp4" width="100%"></video>
-     In today's digital era, for creatives, businesses, and artists, having a Reliable & Search Engine Optimized website is an absolute necessity. Elevate your brand with a website that perfectly matches your vision. We offer various payment plans to suit your budget. From as low as R700.00 per year, you can secure a website tailored to your needs, ensuring your online presence leaves a lasting impression.
-<br>
-Website Packages are as follows:
-<br>
-🚀The Kick-Starter Plan
-<br>
-🚀The Up-Trend Plan
-<br>
-🚀The Space-Rocket Plan
- </p>
- <div class="content-btn">
-<button  style="font-size:16px; color: white; border: 2px solid orange;" onclick="window.location.href='plans.html';"><i class="resume-btn">
-                    </i>VEIW PLANS</button>
-                </div>
+				
+				<!-- Insert site owner's contact details -->
+        
+        <div class="contactInfo" style="text-align: center; margin-bottom: 30px; display: flex; margin-top: 100px; margin-left: 27%;">
  
- 
-<p style="text-align: center; color: black; margin-bottom: 6px; background-color: white;">
- Another option to get a website/ get Pluga/ to inquire for our consulting services...
-<br>
-Call or Whatsapp!<br>
-Call: 0 657 37 1848<br>
-Whatsapp: 0 793 79 5379
-</P>
+        		<div class="buttons">
+             <button onclick="window.location.href='https://goo.gl/maps/oxJL5j5XnHjmHH4o6';" style="border: none; color: darkgreen; background: none;">
+					<i class="fa-solid fa-location-dot" style="font-size: 40px"></i></button>
+						</div>
+    	
+   					<div class="buttons">
+             <button onclick="window.location.href='phone=0793795379';" style="border: none; color: black; background: none;">
+					<i class="fa-solid fa-phone" style="font-size: 40px;"></i></button>
+						</div>
 
-            <!-- social icon list  -->
-            <div class="social-icon-list" style="margin-top: 15px;">
-                <a href="https://web.facebook.com/blossomvelder/" style="color: black;"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.instagram.com/blossomvelder01/?hl=en" style="color: black;"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UC5AzuVWZuJUGYBChW05UKNQ?view_as=subscriber" style="color: black;"><i class="fa-brands fa-square-youtube"></i></a>
-            </div>
-        </div>
-    </div>
-
-
-
-<div class="outer-footer">
-  <div class="widget links">
-                    <ul class="style2">
-                       <li><a href="https://www.termsfeed.com/live/1ab1c651-5b25-43e4-8812-d7e8658a1dd3" style="color: black;">Privacy Policy</a></li>
-                      <li><a href="https://www.termsfeed.com/live/07228ddf-8948-43c8-8992-679d5a7536e2" style="color: black;">terms</a></li>
-                    </ul>
-                  </div>
-<footer>
+						<div class="buttons">
+						 <button onclick="window.location.href='https://api.whatsapp.com/send?phone=+27793795379';" style="border: none; color: green; background: none;">
+					<i class="fab fa-whatsapp" style="font-size: 40px;"></i></button>
+						</div>
+     
+						<div class="buttons">
+             <button onclick="window.location.href='mailto:eltonntando@gmail.com';" style="border: none; color: red; background: none;">
+				  <i class="fas fa-envelope" style="font-size: 40px;"></i></button>
+  					</div>
+  </div>
 </div>
 
-<p style="font-size: x-small; background-color: transparent; text-align: center; border: none;">+27 65 737 1848</p>
 
-<p style="font-size: x-small; background-color: transparent; text-align: center; border: none;">South Africa<br>Mbombela<br>Mpumalanga<br>1352</p>
+<!-- Insert site/plug sharing links -->
+
+<div class="share-button" onclick="showSocialPlatforms()"><i class="fas fa-share"></i>Share Plug</div>
+	<div class="social-platforms">
+		<a href="https://messip.netlify.app/index.html" onclick="shareLink('facebook')"><i class="fab fa-facebook" style="color: blue; font-size: 70px;"></i></a>
+		<a href="https://messip.netlify.app/index.html" onclick="shareLink('instagram')"><i class="fab fa-instagram" style="color: purple; font-size: 70px;"></i></a>
+		<a href="https://messip.netlify.app/index.html" onclick="shareLink('email')"><i class="fas fa-envelope" style="color: red; font-size: 70px;"></i></a>
+		<a href="https://messip.netlify.app/index.html" onclick="shareLink('whatsapp')"><i class="fab fa-whatsapp" style="color: green; font-size: 70px;"></i></a>
+	</div>
 
 
-            <div class="buttons" style="text-align: center;">
-                <button onclick="window.location.href='https://web.facebook.com/blossomvelder/';" style="border: 2px solid black; background-color: transparent; border-radius: 11px; color: black;">
-                    <i class="fa-brands fa-square-facebook" style=" background-color: transparent; border-radius: 11px; color: black;"></i>Facebook
-                </button>
 
-                <button onclick="window.location.href='https://www.instagram.com/blossomvelder01/?hl=en';" style="border: 2px solid black; background-color: transparent; border-radius: 11px; color: black;">
-                    <i class="fa-brands fa-square-instagram" style=" background-color: transparent; border-radius: 11px; color: black;"></i>Instagram
-                </button>
-                
-                 <button onclick="window.location.href='https://www.youtube.com/channel/UC5AzuVWZuJUGYBChW05UKNQ?view_as=subscriber';" style="border: 2px solid black; background-color: transparent; border-radius: 11px; color: black;">
-                    <i class="fa-brands fa-square-youtube" style=" background-color: transparent; border-radius: 11px; color: black;"></i>YouTube
-                </button>
-            </div>
-    <p style="font-size: x-small; background-color: transparent; text-align: center; border: none;">Copyright &copy; 2023 blossomvelder.co.za All Rigths Reserved. website by Blossom Velder pty, Ltd</p>
+ <div class="widget" style="font-size: 7px; margin-top: 2px;">
+                    <ul class="style2">
+                      <li><a href="https://www.termsfeed.com/live/1ab1c651-5b25-43e4-8812-d7e8658a1dd3">Privacy Policy</a></li>
+                      <li><a href="https://www.termsfeed.com/live/07228ddf-8948-43c8-8992-679d5a7536e2">terms</a></li>
+                    </ul>
+                  </div>
+    </div>
+<div class="gallaries" style="text-align: center;">
+<img src="Images/Pluga Logo3.png" style="text-align: center; width: 40px; height: auto;">
+</div>
+	<footer>
+<div class="outer-footer">
+    <p style="font-size: x-small; border: none; background-color: transparent;">  Copyright &copy; 2023 <a href="https://www.blossomvelder.co.za">@Blossom Velder pty, Ltd.</a> All Rigths Reserved</p>
   </div>
-</footer> 
+  	</div>				
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
 
-    <script src="site.js"></script>
+<script src="pluga.js"></script>
 </body>
 </html>
