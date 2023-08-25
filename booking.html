@@ -100,42 +100,46 @@
       cursor: pointer;
     }
 
+    .booking-message {
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 10px;
+    }
 
 
   </style>
-  <script>
+<script>
     function sendBookingDetails() {
-      // Get the input values
       var clientName = document.getElementById('client-name').value;
       var contactNumber = document.getElementById('contact-number').value;
       var emailAddress = document.getElementById('email-address').value;
       var eventDescription = document.getElementById('event-description').value;
       var eventDate = document.getElementById('event-date').value;
 
-      // Compose the message
       var message = "Client Name: " + clientName + "\n"
             + "Contact Number: " + contactNumber + "\n"
             + "Email Address: " + emailAddress + "\n"
             + "Service/Event Name & Description: " + eventDescription + "\n"
             + "Event Date: " + eventDate;
 
-
-// Insert owner's e-mail & whatsapp contact number
-
-
-      // Send via email
       var emailLink = "mailto:eltonntando@gmail.com?subject=Booking Request&body=" + encodeURIComponent(message);
-
-      // Send via WhatsApp
       var whatsappLink = "https://wa.me/+27793795379/?text=" + encodeURIComponent(message);
-
-      // Choose the platform based on user selection
       var platform = document.getElementById('platform').value;
+      
       if (platform === 'email') {
-        window.location.href = emailLink;
+        // Open the email link in a new tab/window
+        window.open(emailLink, '_blank');
       } else if (platform === 'whatsapp') {
+        // Open the WhatsApp link in a new tab/window
         window.open(whatsappLink, '_blank');
       }
+      
+      // Display the booking details in a distinct style
+      var bookingMessageElement = document.createElement('div');
+      bookingMessageElement.classList.add('booking-message');
+      bookingMessageElement.textContent = message;
+      document.body.appendChild(bookingMessageElement);
     }
   </script>
 </head>
