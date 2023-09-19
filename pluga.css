@@ -87,7 +87,7 @@ button{
 	cursor: pointer;
 	color: darkgray;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 20px;
 }
 button:first-child{
 	width: 18%;
@@ -132,7 +132,7 @@ button{
 	cursor: pointer;
 	color: black;
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 20px;
 }
 button:first-child{
 	width: 18%;
