@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="shortcut icon" type="x-icon" href="Images/Pluga Logo3.png">
-	<title>projects</title>
-	<link rel="stylesheet" href="pluga.css" />
-	<link rel="stylesheet" href="main.css" />
+		<link rel="shortcut icon" type="x-icon" href="Images/Pluga Logo3.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <!-- font awesome cdn  -->
+    <script src="https://kit.fontawesome.com/46b7ceee20.js" crossorigin="anonymous"></script>
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="main.css" />
 
 
-	<!-- Font Awesome icon cdn -->
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-	integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	<script src="https://kit.fontawesome.com/61003df5a9.js" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  <style>
+<style>
     .share-button {
       background-color: #4CAF50;
       color: white;
-      padding: 10px;
       border: none;
+      padding: 10px;
       border-radius: 14px;
       cursor: pointer;
       display: inline-block;
-      align-self: left;
-      margin-right: 70%;
-      margin-bottom: 5%;
+      margin-bottom: 10px;
+      margin-left: 10%;
+      margin-top: 12px;
     }
 
     .social-platforms {
@@ -38,6 +37,8 @@
       justify-content: center;
       align-items: center;
       margin-top: 10px;
+      padding-bottom: 10px;
+      margin-right: 5px;
     }
 
     .social-platforms a {
@@ -46,83 +47,95 @@
       font-size: 30px;
     }
   </style>
-	<script>
-		function showSocialPlatforms() {
-			const socialPlatforms = document.querySelector('.social-platforms');
-			socialPlatforms.classList.toggle('show');
-		}
+  <script>
+    function showSocialPlatforms() {
+      const socialPlatforms = document.querySelector('.social-platforms');
+      socialPlatforms.classList.toggle('show');
+    }
 
-		function shareLink(platform) {
-			var linkToShare = "https://messyp.netlify.app/projects.html"; // Replace with your link to share
-			var socialUrl;
+    function shareLink(platform) {
+      var linkToShare = "https://avatar-pluga.netlify.app/projects.html"; // Replace with your link to share
+      var socialUrl;
 
-			if (platform === 'facebook') {
-				socialUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(linkToShare);
-			} else if (platform === 'instagram') {
-				socialUrl = 'https://www.instagram.com/share?url=' + encodeURIComponent(linkToShare);
-			} else if (platform === 'email') {
-				socialUrl = 'mailto:?body=' + encodeURIComponent(linkToShare);
-			} else if (platform === 'whatsapp') {
-				socialUrl = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(linkToShare);
-			}
+      if (platform === 'facebook') {
+        socialUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(linkToShare);
+      } else if (platform === 'instagram') {
+        socialUrl = 'https://www.instagram.com/share?url=' + encodeURIComponent(linkToShare);
+      } else if (platform === 'email') {
+        socialUrl = 'mailto:?body=' + encodeURIComponent(linkToShare);
+      } else if (platform === 'whatsapp') {
+        socialUrl = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(linkToShare);
+      }
 
-			window.open(socialUrl, '_blank');
-		}
-	</script>
+      window.open(socialUrl, '_blank');
+    }
+  </script>
+
+
 
 </head>
 <body>
+    <!-- home page  -->
+    <div class="home-page">
+        <!-- header section  -->
+        <div class="header-section">
+            <!-- header logo  -->
+            <div class="header-logo">
+                <h1>MESSI P.</h1>
+            </div>
 
+            <!-- header navigation  -->
+            <div class="header-nav">
+                <div class="mobile-nav-bar">
+                    <i class="fa-solid fa-bars" id="mobile-nav-bar-icon"></i>
+                </div>
+                <ul class="header-nav-list" id="header-nav-list">
+                  <li class="header-nav-tab">
+                        <a href="index.html" >Home</a>
+                    </li >
+                    <li class="header-nav-tab ">
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                  
+                    <li class="header-nav-tab">
+                        <a href="selling2.html">Services</a>
+                    </li>
+                    <li class="header-nav-tab">
+                        <a href="selling.html">Merch</a>
+                    </li>
+                    <li class="header-nav-tab">
+                        <a href="booking.html" >Bookings</a>
+                    </li >
+                    
+                    <span class="highlight"></span>
+                </ul>
 
-	<div class="wrapper">
-		<div class="page">
-	<div class="cover" style="height: auto; width: auto; background-color: transparent; border-radius: 95px; margin-top: 20px;">
-		</div>
+                <div style="margin-left: 16px;" class="mode-change">
+                    <i class="fa-solid fa-moon" id="mode-change"></i>
+                </div>
+            </div>
+        </div>
+        
 
-			<div class="buttons" style="text-align: center;">
-				<button onclick="window.location.href='gallery.html';">
-					<i class="fa-solid fa-image"></i>Gallery
-				</button>
+      <div class="gallaries" style="text-align: center;">
+        <h1 style="margin-bottom: 27px; margin-top: 27px;">Projects</h1>
+<div class="covered" style="display: flex;">
 
-			<button onclick="window.location.href='index.html';">
-					<i class="fa-solid fa-house"></i>Home
-				</button>
-			</div>
-			
-			
+<!-- Insert site owner's projects -->
 
-
-
-<!-- Insert site/plug sharing links -->
-
-				
-<div class="share-button" onclick="showSocialPlatforms()"><i class="fas fa-share"></i>Share Plug</div>
-  <div class="social-platforms">
-    <a href="https://messyp.netlify.app/projects.html" onclick="shareLink('facebook')"><i class="fab fa-facebook" style="color: blue; font-size: 70px;"></i></a>
-    <a href="https://messyp.netlify.app/projects.html" onclick="shareLink('instagram')"><i class="fab fa-instagram" style="color: purple; font-size: 70px;"></i></a>
-    <a href="https://messyp.netlify.app/projects.html" onclick="shareLink('email')"><i class="fas fa-envelope" style="color: red; font-size: 70px;"></i></a>
-    <a href="https://messyp.netlify.app/projects.html" onclick="shareLink('whatsapp')"><i class="fab fa-whatsapp" style="color: green; font-size: 70px;"></i></a>
-  </div>
-<div class="selection-links" style="align-items: center;">
-  <div class="link new-link" style="text-align: center;">
-<div class="items" style="text-align: center;">
-
-<h3 style="text-align: center; color: black; margin-bottom: 5px;">MY PROJECTS</h3>
-
-<div class="box">
+<div style="width: 100%; text-align: center;" class="box">
 <h3 style="text-align: center; color: black; margin-bottom: 5px;">MUSIC</h3>
 
 
-<!-- Insert site owner's projects -->
 
 
 <div style="border: 1px solid darkgray; display: flex; flex-direction: column;">
 	<div class="post" data-post-id="01001">
-<img src="Images/Audio-img.jpg" class="post-image" style="width: 35%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">AWESOME SCENERY</p>
-<audio controls src="Audios/Messi-Audio (1).mp3" style="height: 100px; width: 37%; margin-top: -55px;"></audio>
+<img src="Images/Audio-img.jpg" class="post-image" style="width: 30%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">AWESOME SCENERY</p>
+<audio controls src="Audios/Messi-Audio (1).mp3" style="height: 100px; width: 30%; margin-top: -40px;"></audio>
 <div>
-<button onclick="copyToWhatsApp('AWESOME SCENERY')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Get track</button>
+<button onclick="copyToWhatsApp('AWESOME SCENERY')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px; border: none; padding: 4px;">Get track</button>
 </div>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
@@ -140,11 +153,11 @@
 
 <div style="border: 1px solid darkgray; display: flex; flex-direction: column;">
 	<div class="post" data-post-id="01002">
-<img src="Images/Audio-img.jpg" class="post-image" style="width: 35%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">PROMISE ME</p>
-<audio controls src="Audios/Messi-Audio (2).mp3" style="height: 100px; width: 37%; margin-top: -55px;"></audio>
+<img src="Images/Audio-img.jpg" class="post-image" style="width: 30%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">PROMISE ME</p>
+<audio controls src="Audios/Messi-Audio (2).mp3" style="height: 100px; width: 30%; margin-top: -40px;"></audio>
 <div>
-<button onclick="copyToWhatsApp('PROMISE ME')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Get track</button>
+<button onclick="copyToWhatsApp('PROMISE ME')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;border: none; padding: 4px;">Get track</button>
 </div>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
@@ -163,11 +176,11 @@
 
 <div style="border: 1px solid darkgray; display: flex; flex-direction: column;">
 	<div class="post" data-post-id="01003">
-<img src="Images/Audio-img.jpg" class="post-image" style="width: 35%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">ALL THE WAY</p>
-<audio controls src="Audios/Messi-Audio (3).mp3" style="height: 100px; width: 37%; margin-top: -55px;"></audio>
+<img src="Images/Audio-img.jpg" class="post-image" style="width: 30%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">ALL THE WAY</p>
+<audio controls src="Audios/Messi-Audio (3).mp3" style="height: 100px; width: 30%; margin-top: -40px;"></audio>
 <div>
-<button onclick="copyToWhatsApp('ALL THE WAY')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Get track</button>
+<button onclick="copyToWhatsApp('ALL THE WAY')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;border: none; padding: 4px;">Get track</button>
 </div>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
@@ -186,11 +199,11 @@
 
 <div style="border: 1px solid darkgray; display: flex; flex-direction: column;">
 	<div class="post" data-post-id="01004">
-<img src="Images/Audio-img.jpg" class="post-image" style="width: 35%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">BOSS</p>
-<audio controls src="Audios/Messi-Audio (4).mp3" style="height: 100px; width: 37%; margin-top: -55px;"></audio>
+<img src="Images/Audio-img.jpg" class="post-image" style="width: 30%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">BOSS</p>
+<audio controls src="Audios/Messi-Audio (4).mp3" style="height: 100px; width: 30%; margin-top: -40px;"></audio>
 <div>
-<button onclick="copyToWhatsApp('BOSS')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Get track</button>
+<button onclick="copyToWhatsApp('BOSS')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px; border: none; padding: 4px;">Get track</button>
 </div>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
@@ -209,11 +222,11 @@
 
 <div style="border: 1px solid darkgray; display: flex; flex-direction: column;">
 	<div class="post" data-post-id="01005">
-<img src="Images/Audio-img.jpg" class="post-image" style="width: 35%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">CREAM</p>
-<audio controls src="Audios/Messi-Audio (5).mp3" style="height: 100px; width: 37%; margin-top: -55px;"></audio>
+<img src="Images/Audio-img.jpg" class="post-image" style="width: 30%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">CREAM</p>
+<audio controls src="Audios/Messi-Audio (5).mp3" style="height: 100px; width: 30%; margin-top: -40px;"></audio>
 <div>
-<button onclick="copyToWhatsApp('CREAM')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Get track</button>
+<button onclick="copyToWhatsApp('CREAM')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px; border: none; padding: 4px;">Get track</button>
 </div>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
@@ -232,11 +245,11 @@
 
 <div style="border: 1px solid darkgray; display: flex; flex-direction: column;">
 	<div class="post" data-post-id="01006">
-<img src="Images/Audio-img.jpg" style="width: 35%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">ON THE STOVE</p>
-<audio controls src="Audios/Messi-Audio (6).mp3" class="post-image" style="height: 100px; width: 37%; margin-top: -55px;"></audio>
+<img src="Images/Audio-img.jpg" style="width: 30%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">ON THE STOVE</p>
+<audio controls src="Audios/Messi-Audio (6).mp3" class="post-image" style="height: 100px; width: 30%; margin-top: -40px;"></audio>
 <div>
-<button onclick="copyToWhatsApp('ON THE STOVE')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Get track</button>
+<button onclick="copyToWhatsApp('ON THE STOVE')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px; border: none; padding: 4px;">Get track</button>
 </div>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
@@ -255,11 +268,11 @@
 
 <div style="border: 1px solid darkgray; display: flex; flex-direction: column;">
 	<div class="post" data-post-id="01007">
-<img src="Images/Audio-img.jpg" class="post-image" style="width: 35%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">GREATNESS</p>
-<audio controls src="Audios/Messi-Audio (7).mp3" style="height: 100px; width: 37%; margin-top: -55px;"></audio>
+<img src="Images/Audio-img.jpg" class="post-image" style="width: 30%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">GREATNESS</p>
+<audio controls src="Audios/Messi-Audio (7).mp3" style="height: 100px; width: 30%; margin-top: -40px;"></audio>
 <div>
-<button onclick="copyToWhatsApp('GREATNESS')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Get track</button>
+<button onclick="copyToWhatsApp('GREATNESS')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px; border: none; padding: 4px;">Get track</button>
 </div>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
@@ -278,11 +291,11 @@
 
 <div style="border: 1px solid darkgray; display: flex; flex-direction: column;">
 	<div class="post" data-post-id="01008">
-<img src="Images/Audio-img.jpg" class="post-image" style="width: 35%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">HOLLY MAN</p>
-<audio controls src="Audios/Messi-Audio (8).mp3" style="height: 100px; width: 37%; margin-top: -55px;"></audio>
+<img src="Images/Audio-img.jpg" class="post-image" style="width: 30%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">HOLLY MAN</p>
+<audio controls src="Audios/Messi-Audio (8).mp3" style="height: 100px; width: 30%; margin-top: -40px;"></audio>
 <div>
-<button onclick="copyToWhatsApp('HOLLY MAN')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Get track</button>
+<button onclick="copyToWhatsApp('HOLLY MAN')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px; border: none; padding: 4px;">Get track</button>
 </div>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
@@ -301,11 +314,11 @@
 
 <div style="border: 1px solid darkgray; display: flex; flex-direction: column;">
 	<div class="post" data-post-id="01009">
-<img src="Images/Audio-img.jpg" class="post-image" style="width: 35%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">BABTIST</p>
-<audio controls src="Audios/Messi-Audio (9).mp3" style="height: 100px; width: 37%; margin-top: -55px;"></audio>
+<img src="Images/Audio-img.jpg" class="post-image" style="width: 30%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">BABTIST</p>
+<audio controls src="Audios/Messi-Audio (9).mp3" style="height: 100px; width: 30%; margin-top: -40px;"></audio>
 <div>
-<button onclick="copyToWhatsApp('BABTIST')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Get track</button>
+<button onclick="copyToWhatsApp('BABTIST')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px; border: none; padding: 4px;">Get track</button>
 </div>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
@@ -324,11 +337,11 @@
 
 <div style="border: 1px solid darkgray; display: flex; flex-direction: column;">
 	<div class="post" data-post-id="010010">
-<img src="Images/Audio-img.jpg" style="width: 35%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">STRONGER</p>
-<audio controls src="Audios/Messi-Audio (10).mp3" class="post-image" style="height: 100px; width: 37%; margin-top: -55px;"></audio>
+<img src="Images/Audio-img.jpg" style="width: 30%; height: 240px; margin-top: 5%; border-radius: 10px; border: 4px solid darkgray;">
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">STRONGER</p>
+<audio controls src="Audios/Messi-Audio (10).mp3" class="post-image" style="height: 100px; width: 30%; margin-top: -40px;"></audio>
 <div>
-<button onclick="copyToWhatsApp('STRONGER')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Get track</button>
+<button onclick="copyToWhatsApp('STRONGER')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px; border: none; padding: 4px;">Get track</button>
 </div>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
@@ -340,6 +353,8 @@
 				<span class="post-rating-count">0</span>
 			</div>
 		</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -367,13 +382,13 @@
 
 <!-- Insert site owner's music videos, including Youtube videos and links -->
 
-
+<div style="width: 100%; text-align: center;" class="box">
 
 <div>
 	<div class="post" data-post-id="010011">
 <video controls src="Videos
 /Messivid (1).mp4" class="post-image" width="65%" style="border-radius: 10%; border: 12px solid white;"></video>
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">STRONGER</p>
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">STRONGER</p>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
 				<span class="post-rating-button material-icons">thumb_up</span>
@@ -393,7 +408,7 @@
 	<div class="post" data-post-id="010012">
 <video controls src="Videos
 /Messivid (2).mp4" class="post-image" width="65%" style="border-radius: 10%; border: 12px solid white;"></video>
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">HOLLY MAN</p>
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">HOLLY MAN</p>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
 				<span class="post-rating-button material-icons">thumb_up</span>
@@ -413,7 +428,7 @@
 	<div class="post" data-post-id="010013">
 <video controls src="Videos
 /Messivid (3).mp4" class="post-image" width="65%" style="border-radius: 10%; border: 12px solid white;"></video>
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">GREATNESS</p>
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">GREATNESS</p>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
 				<span class="post-rating-button material-icons">thumb_up</span>
@@ -433,7 +448,7 @@
 	<div class="post" data-post-id="010014">
 <video controls src="Videos
 /Messivid (4).mp4" class="post-image" width="65%" style="border-radius: 10%; border: 12px solid white;"></video>
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">CREAM</p>
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">CREAM</p>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
 				<span class="post-rating-button material-icons">thumb_up</span>
@@ -453,7 +468,7 @@
 	<div class="post" data-post-id="010015">
 <video controls src="Videos
 /Messivid (5).mp4" class="post-image" width="65%" style="border-radius: 10%; border: 12px solid white;"></video>
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">ON THE STOVE</p>
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">ON THE STOVE</p>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
 				<span class="post-rating-button material-icons">thumb_up</span>
@@ -473,7 +488,7 @@
 	<div class="post" data-post-id="010016">
 <video controls src="Videos
 /Messivid (6).mp4" class="post-image" width="65%" style="border-radius: 10%; border: 12px solid white;"></video>
-<p style="text-align: center; align-self: center; width: 38%; margin-left: 31%; margin-top: 1px; ">BABTIST</p>
+<p style="text-align: center; align-self: center; width: 37%; margin-left: 31%; margin-top: 1px; ">BABTIST</p>
 <div class="post-ratings-container"  style="margin-right: 2%">
 			<div class="post-rating">
 				<span class="post-rating-button material-icons">thumb_up</span>
@@ -489,23 +504,16 @@
 
 
 </div>
-<button onclick="window.location.href='funding.html';">
+<button onclick="window.location.href='funding.html';" style="text-align: center; border-radius: 15px; padding: 5px">
 					<i class="fa-solid fa-hand-holding-dollar"></i>Sponsor Me
 				</button>
-<button onclick="window.location.href='index.html';" style="text-align: center;">
+<button onclick="window.location.href='index.html';" style="text-align: center; border-radius: 15px; padding: 5px">
 					<i class="fa-solid fa-house"></i>Home
 				</button>
 <div class="gallaries" style="text-align: center;">
-<img src="Images/Pluga Logo3.png" style="text-align: center; width: 40px; height: auto;">
 </div>
 <iframe id=""src="" frameborder="0"></iframe>
-<div class="widget" style="font-size: 7px; margin-top: 70px;">
-                    <ul class="style2">
-                      <li><a href="https://www.termsfeed.com/live/1ab1c651-5b25-43e4-8812-d7e8658a1dd3">Privacy Policy</a></li>
-                      <li><a href="https://www.termsfeed.com/live/07228ddf-8948-43c8-8992-679d5a7536e2">terms</a></li>
-                    </ul>
-                  </div>
-    </div>
+
 
 
 
@@ -525,17 +533,46 @@
   }
 </script>
 
-	<footer>
+
+      </div>
+    </div>
+    <div class="share-button" onclick="showSocialPlatforms()"><i class="fas fa-share"></i>Share Plug</div>
+
+
+
+
+<!-- Insert site/plug sharing links -->
+  <div class="social-platforms">
+    <a href="https://avatar-pluga.netlify.app/projects.html" onclick="shareLink('facebook')"><i class="fab fa-facebook" style="color: blue; font-size: 70px;"></i></a>
+    <a href="https://avatar-pluga.netlify.app/projects.html" onclick="shareLink('instagram')"><i class="fab fa-instagram" style="color: purple; font-size: 70px;"></i></a>
+    <a href="https://avatar-pluga.netlify.app/projects.html" onclick="shareLink('email')"><i class="fas fa-envelope" style="color: red; font-size: 70px;"></i></a>
+    <a href="https://avatar-pluga.netlify.app/projects.html" onclick="shareLink('whatsapp')"><i class="fab fa-whatsapp" style="color: green; font-size: 70px;"></i></a>
+  </div>
+
+
+
+ <div class="widget" style="font-size: 7px; margin-top: 5px; text-align: center;">
+                    <ul class="style2">
+                      <li><a href="https://www.termsfeed.com/live/1ab1c651-5b25-43e4-8812-d7e8658a1dd3">Privacy Policy</a></li>
+                      <li><a href="https://www.termsfeed.com/live/07228ddf-8948-43c8-8992-679d5a7536e2">terms</a></li>
+                    </ul>
+                  </div>
+    </div>
+<div class="gallaries" style="text-align: center; margin-top: 12px">
+<img src="Images/Pluga Logo3.png" style="text-align: center; width: 40px; height: auto;">
+</div>
+  <footer style="text-align: center;">
 <div class="outer-footer">
     <p style="font-size: x-small; border: none; background-color: transparent;">  Copyright &copy; 2023 <a href="https://www.blossomvelder.co.za">@Blossom Velder pty, Ltd.</a> All Rigths Reserved</p>
   </div>
-  	</div>				
-			</div>
-		</div>
-	</div>
+    </div>        
+      </div>
+    </div>
+  </div>
 </div>
 </footer>
-<script src="pluga.js"></script>
+
+<script src="site.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
