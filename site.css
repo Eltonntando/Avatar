@@ -51,7 +51,7 @@
     box-sizing: border-box;
 }
 body{
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     font-family: var(--mainFont);
     background-color: var(--primaryColor);
@@ -295,7 +295,7 @@ h3{
         --fs-icon:2rem;
     }
     .home-page{
-        height: 150vh;
+        height: 107vh;
         padding: 20px;
         overflow: hidden;
     }
@@ -331,7 +331,7 @@ h3{
         width: 100%;
     }
     .hero-section .hero-image{
-        height: 20%;
+        height: 70%;
         width: 100%;
         position: absolute;
         bottom: 0;
@@ -340,7 +340,7 @@ h3{
         
     }
     .social-icon-list{
-        flex-direction: flex;
+        flex-direction: column;
     }
     .social-icon-list i{
         padding: 10px 0;
