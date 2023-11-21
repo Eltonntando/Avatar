@@ -231,6 +231,27 @@ h2{
 h3{
     background-color: white;
 }
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.widget {
+    list-style: none;
+    text-decoration: none;
+}
+
 /* social icon list  */
 .social-icon-list{
     display: flex;
